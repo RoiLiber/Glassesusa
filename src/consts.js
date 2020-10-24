@@ -1,3 +1,17 @@
+import FacebookIcon from '@material-ui/icons/Facebook';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import YouTubeIcon from '@material-ui/icons/YouTube';
+import PinterestIcon from '@material-ui/icons/Pinterest';
+
+const netIconList = [
+    { icon: FacebookIcon, link: 'https://www.facebook.com/GlassesUSA/' },
+    { icon: InstagramIcon, link: 'https://www.instagram.com/glassesusa/' },
+    { icon: TwitterIcon, link: 'https://twitter.com/GlassesUSA' },
+    { icon: YouTubeIcon, link: 'https://www.youtube.com/user/GlassesUSA' },
+    { icon: PinterestIcon, link: 'https://www.pinterest.com/glassesusa/' }
+]
+
 const glasses = [
     {
         "id": "62-0VE218914258759",
@@ -41,5 +55,6 @@ const glasses = [
 ]
 
 export {
-    glasses
+    glasses,
+    netIconList
 }

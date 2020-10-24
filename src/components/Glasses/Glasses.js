@@ -80,7 +80,7 @@ export default function Glasses(props) {
                     })}
                 </div>
             }
-            <div className={`clear ${darkMode ? 'darkMode_clear' : ''}`}/>
+            {isOpen && <div className={`clear ${darkMode ? 'darkMode_clear' : ''}`}/>}
         </div>
     );
 }

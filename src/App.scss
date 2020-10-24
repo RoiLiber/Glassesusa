@@ -11,6 +11,50 @@ div.App {
   flex-direction: column;
   align-items: center;
   position: static;
+  font-family: 'Roboto', sans-serif;
+
+  & > footer.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    bottom: 0;
+    border-radius: 4px 4px 0 0;
+    background: linear-gradient(45deg, $dark-blue, $red);
+    background-size: 250% 300%;
+    animation: g_color_background 5.5s ease infinite;
+
+    & > span {
+      color: white;
+      font-size: 1.2em;
+      width: 100%;
+      padding: 0.5em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    & > div.networks_wrapper {
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2em;
+      padding: 0.5em;
+
+      & > a .net_icon {
+        margin: 0 0.5em;
+        color: white;
+        cursor: pointer;
+      }
+      & > a .net_icon:hover {
+        color: $blue;
+      }
+    }
+  }
 
   & > .light_icon {
     position: fixed;
@@ -47,13 +91,13 @@ div.App {
       color: $red;
       font-size: 1.2em;
       padding: 2em 1em 1.5em 1em;
-      font-weight: bold;
       @include respond-to('v-small') {
         font-size: 1.5em;
       }
       @include respond-to('small') {
         font-size: 1.5em;
         padding: 3em 1em 2.5em 1em;
+        font-weight: bold;
       }
     }
   }
@@ -75,5 +119,20 @@ div.app_darkMode {
 
   & > .header_darkMode {
     background-color: $dark-blue;
+  }
+}
+
+@keyframes g_color_background {
+
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
   }
 }
