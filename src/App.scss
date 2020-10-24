@@ -15,7 +15,7 @@ div.App {
   & > .light_icon {
     position: fixed;
     top: 5vh;
-    right: 5vh;
+    right: 25px;
     color: $yellow;
     font-size: 2em;
     z-index: 1100;
@@ -64,7 +64,7 @@ div.app_darkMode {
   & > .dark_icon {
     position: fixed;
     top: 5vh;
-    right: 5vh;
+    right: 25px;
     color: $dark-background;
     font-size: 2em;
     z-index: 1100;
