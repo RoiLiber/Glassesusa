@@ -39,21 +39,31 @@ div.carousel_wrapper {
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 0.5em;
+    bottom: 0;
     left: 0;
 
-    & > span.btn {
-      width: 0.45em;
-      height: 0.45em;
+    & span.btn {
+      width: 1.5em;
+      height: 1.5em;
       border-radius: 50%;
-      background-color: $dark-blue;
-      margin: 0 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+      margin: 0 4px;
       cursor: pointer;
-    }
-    & > span.selected {
-      width: 0.55em;
-      height: 0.55em;
-      background-color: $blue;
+
+      & > span.inner_btn {
+        width: 0.45em;
+        height: 0.45em;
+        border-radius: 50%;
+        background-color: $dark-blue;
+      }
+      & > span.selected {
+        width: 0.55em;
+        height: 0.55em;
+        background-color: $blue;
+      }
     }
   }
 }

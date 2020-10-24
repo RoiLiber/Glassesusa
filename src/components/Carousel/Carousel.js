@@ -36,10 +36,12 @@ export default function Carousel(props) {
             <div className={'btn_wrapper'}>
                 {imgList.map((btn, index) => {
                     return <span
-                        key={uuidv4 + index}
-                        className={`btn ${index === photoIndex ? 'selected' : ''}`}
+                        className={'btn'}
                         onClick={() => setPhotoIndex(index)}
-                    />
+                        key={uuidv4 + index}
+                    >
+                        <span className={`inner_btn ${index === photoIndex ? 'selected' : ''}`}/>
+                    </span>
                 })}
             </div>
         </div>
