@@ -28,9 +28,9 @@ div.glasses_wrapper {
     justify-content: center;
     background-color: white;
     position: relative;
-    bottom: 0;
+    bottom: 5vh;
     @include respond-to('small') {
-      top: 5vh;
+      bottom: 0;
     }
 
     & > div.item {
