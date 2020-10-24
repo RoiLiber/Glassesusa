@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Glassesusa/precache-manifest.a705c699ffbbd804e0edf13cbbc64d0b.js"
+  "/Glassesusa/precache-manifest.9b0f0e460546f9dec6dd414ac466cd9a.js"
 );
 
 self.addEventListener('message', (event) => {
