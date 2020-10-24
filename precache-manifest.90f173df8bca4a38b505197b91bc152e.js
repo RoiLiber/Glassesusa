@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "298884872cbd805586de00f899638cd4",
+    "revision": "fed23cd94d6500bbb92d75745027a34c",
     "url": "/Glassesusa/index.html"
   },
   {
-    "revision": "261e73644be6738ddc90",
-    "url": "/Glassesusa/static/css/main.0972e21d.chunk.css"
+    "revision": "443b217d1a8ff1b79e5a",
+    "url": "/Glassesusa/static/css/main.97ef818b.chunk.css"
   },
   {
     "revision": "d3c5f8b32b9639429530",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Glassesusa/static/js/2.7890b821.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "261e73644be6738ddc90",
+    "revision": "443b217d1a8ff1b79e5a",
     "url": "/Glassesusa/static/js/main.e571e757.chunk.js"
   },
   {
