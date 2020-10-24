@@ -8,7 +8,8 @@ import Carousel from "../Carousel/Carousel";
 import { v4 as uuidv4 } from 'uuid';
 import './style.scss';
 
-export default function Glasses() {
+export default function Glasses(props) {
+    const { darkMode } = props;
     const [isOpen, setIsOpen] = useState(false);
 
     function calculateDiscount(price, finalPrice) {
@@ -67,18 +68,19 @@ export default function Glasses() {
                     ? <Pulse count={3} delay={1700}>
                         <Button
                             variant="text"
-                            className={'btn'}
+                            className={`btn ${darkMode ? 'darkMode_btn' : ''}`}
                             onClick={() => setIsOpen(true)}
                         >
                             show me
                         </Button>
                     </Pulse>
-                : <div className={'glasses_list'}>
+                : <div className={`glasses_list ${darkMode ? 'darkMode_list' : ''}`}>
                     {glasses.map((item, index) => {
                         return glassesItem(item, index)
                     })}
                 </div>
             }
+            <div className={`clear ${darkMode ? 'darkMode_clear' : ''}`}/>
         </div>
     );
 }

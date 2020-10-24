@@ -12,6 +12,15 @@ div.App {
   align-items: center;
   position: static;
 
+  & > .light_icon {
+    position: fixed;
+    top: 5vh;
+    right: 5vh;
+    color: $yellow;
+    font-size: 2em;
+    z-index: 1100;
+  }
+
   & > .header {
     width: 100%;
     display: flex;
@@ -46,5 +55,22 @@ div.App {
         padding: 3em 1em 2.5em 1em;
       }
     }
+  }
+}
+
+div.app_darkMode {
+  background-color: $dark-blue;
+
+  & > .dark_icon {
+    position: fixed;
+    top: 5vh;
+    right: 5vh;
+    color: $dark-background;
+    font-size: 2em;
+    z-index: 1100;
+  }
+
+  & > .header_darkMode {
+    background-color: $dark-blue;
   }
 }

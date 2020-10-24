@@ -8,7 +8,14 @@ div.glasses_wrapper {
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 40vh;
-  margin-bottom: 5vh;
+
+  & > div.clear {
+    height: 5vh;
+    width: 100%;
+  }
+  & > div.darkMode_clear {
+    background-color: $dark-blue;
+  }
 
   & > div.glasses_list {
     width: 100%;
@@ -27,8 +34,8 @@ div.glasses_wrapper {
       flex-wrap: wrap;
       flex-direction: column;
       align-items: center;
-      width: 250px;
-      height: 250px;
+      width: 270px;
+      height: 270px;
       background-color: white;
       margin: 35px;
       border-radius: 2px;
@@ -135,7 +142,7 @@ div.glasses_wrapper {
           padding: 3px;
           width: 100%;
           border-radius: 30px;
-          margin: 0;
+          margin: 5px 0 0 0;
           font-size: 0.8em;
           @include respond-to('small') {
             font-size: 1em;
@@ -161,7 +168,11 @@ div.glasses_wrapper {
     }
   }
 
-  & > div button {
+  & > div.darkMode_list {
+    background-color: $dark-blue;
+  }
+
+  & > div button.btn {
     color: $blue;
     border: thin solid $blue;
     background-color: white;
@@ -172,6 +183,11 @@ div.glasses_wrapper {
     font-size: 1em;
     z-index: 1000;
   }
+  & > div button.darkMode_btn {
+    color: $blue;
+    border: thin solid $blue;
+    background-color: $dark-blue;
+  }
   & > div button:hover {
     color: white;
     border: thin solid white;
@@ -179,3 +195,4 @@ div.glasses_wrapper {
     font-size: 1.02em;
   }
 }
+
