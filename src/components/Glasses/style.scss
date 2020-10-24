@@ -1,0 +1,162 @@
+@import "../../styles/colorsConfig";
+@import "../../styles/mixins";
+
+div.glasses_wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 45vh;
+  margin-bottom: 5vh;
+
+  & > div.glasses_list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+
+    & > div.item {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      width: 300px;
+      height: 300px;
+      background-color: white;
+      margin: 35px;
+      border-radius: 2px;
+      box-shadow: 0 11px 5px rgba(0,0,0,0.12), 0 5px 7px rgba(0,0,0,0.24);
+      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+      @include respond-to('larger') {
+        width: 350px;
+        height: 350px;
+      }
+
+      & > div.item_top {
+        display: flex;
+        width: 100%;
+        padding: 1em 0;
+        justify-content: flex-end;
+        position: relative;
+
+        & > span.discount {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          left: 0;
+          background-color: $red;
+          color: white;
+          font-weight: bold;
+          font-size: 1em;
+          border-radius: 0 1em 1em 0;
+          padding: 2px 15px 2px 10px;
+        }
+
+        & > span.qty {
+          display: flex;
+          align-items: center;
+          color: $red;
+          padding: 0 10px;
+
+          & > .fire_icon {
+            margin-left: 5px;
+          }
+        }
+      }
+
+      & > div.glasses_photo {
+        height: 45%;
+        width: 100%;
+      }
+
+      & > span.name {
+        width: 100%;
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-bottom: 0.2em;
+        color: $dark-blue;
+      }
+
+      & > p.price_and_shipping {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $dark-blue;
+
+        & > span.price {
+          margin-right: 0.5em;
+          display: flex;
+          position: relative;
+
+          & > span.line {
+            position: absolute;
+            width: 100%;
+            border-top: thin solid $dark-blue;
+            top: 57%;
+          }
+        }
+        & > span.final_price {
+          margin-right: 0.15em;
+          font-weight: bold;
+          font-size: 1.15em;
+          color: $red;
+        }
+      }
+
+      & > a {
+        display: flex;
+        width: 80%;
+        margin-top: 0.5em;
+
+        & > button.item_btn {
+          color: white;
+          background-color: $orange;
+          border: thin solid $orange;
+          font-weight: bold;
+          padding: 3px;
+          width: 100%;
+          border-radius: 30px;
+          margin: 0;
+          @include respond-to('larger') {
+            margin-top: 10px;
+          }
+        }
+        & > button:hover {
+          background-color: $blue;
+          border: thin solid $blue;
+        }
+        & > button.disabled {
+          color: gray;
+          border: thin solid gray;
+          background-color: white;
+        }
+      }
+    }
+
+    & > div.item:hover {
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+  }
+
+  & > div button {
+    color: $blue;
+    border: thin solid $blue;
+    background-color: white;
+    border-radius: 20px;
+    font-weight: bold;
+    padding: 5px 20px;
+    margin: 5vh;
+    font-size: 1em;
+    z-index: 1000;
+  }
+  & > div button:hover {
+    color: white;
+    border: thin solid white;
+    background-color: $blue;
+    font-size: 1.02em;
+  }
+}

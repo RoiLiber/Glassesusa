@@ -1,0 +1,59 @@
+@import "../../styles/colorsConfig";
+@import "../../styles/mixins";
+
+div.carousel_wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  padding: 0 10px;
+
+  & > span.arrow {
+    width: 10%;
+    display: flex;
+    cursor: pointer;
+    color: $dark-blue;
+  }
+  & > span.arrow:hover {
+    color: $blue;
+    transition: 0.1s ease-in-out;
+  }
+
+  & > img {
+    width: 70%;
+    height: 70%;
+    position: relative;
+    bottom: 0.9em;
+  }
+  & > img:hover {
+    width: 80%;
+    height: 80%;
+  }
+
+  & > div.btn_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0.5em;
+    left: 0;
+
+    & > span.btn {
+      width: 0.45em;
+      height: 0.45em;
+      border-radius: 50%;
+      background-color: $dark-blue;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+    & > span.selected {
+      width: 0.55em;
+      height: 0.55em;
+      background-color: $blue;
+    }
+  }
+}
