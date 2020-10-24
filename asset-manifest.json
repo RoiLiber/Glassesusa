@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/Glassesusa/static/css/main.f3f435bc.chunk.css",
-    "main.js": "/Glassesusa/static/js/main.e29e462c.chunk.js",
-    "main.js.map": "/Glassesusa/static/js/main.e29e462c.chunk.js.map",
+    "main.css": "/Glassesusa/static/css/main.c987ad46.chunk.css",
+    "main.js": "/Glassesusa/static/js/main.a4435b44.chunk.js",
+    "main.js.map": "/Glassesusa/static/js/main.a4435b44.chunk.js.map",
     "runtime-main.js": "/Glassesusa/static/js/runtime-main.3465a2c7.js",
     "runtime-main.js.map": "/Glassesusa/static/js/runtime-main.3465a2c7.js.map",
-    "static/js/2.7890b821.chunk.js": "/Glassesusa/static/js/2.7890b821.chunk.js",
-    "static/js/2.7890b821.chunk.js.map": "/Glassesusa/static/js/2.7890b821.chunk.js.map",
+    "static/js/2.e3828fa4.chunk.js": "/Glassesusa/static/js/2.e3828fa4.chunk.js",
+    "static/js/2.e3828fa4.chunk.js.map": "/Glassesusa/static/js/2.e3828fa4.chunk.js.map",
     "index.html": "/Glassesusa/index.html",
-    "precache-manifest.133827656d49b8a6dcae500dd63e8331.js": "/Glassesusa/precache-manifest.133827656d49b8a6dcae500dd63e8331.js",
+    "precache-manifest.04162e98b60f2c06f2beec0c9248a74a.js": "/Glassesusa/precache-manifest.04162e98b60f2c06f2beec0c9248a74a.js",
     "service-worker.js": "/Glassesusa/service-worker.js",
-    "static/css/main.f3f435bc.chunk.css.map": "/Glassesusa/static/css/main.f3f435bc.chunk.css.map",
-    "static/js/2.7890b821.chunk.js.LICENSE.txt": "/Glassesusa/static/js/2.7890b821.chunk.js.LICENSE.txt",
-    "static/media/logo.png": "/Glassesusa/static/media/logo.bd597fcd.png"
+    "static/css/main.c987ad46.chunk.css.map": "/Glassesusa/static/css/main.c987ad46.chunk.css.map",
+    "static/js/2.e3828fa4.chunk.js.LICENSE.txt": "/Glassesusa/static/js/2.e3828fa4.chunk.js.LICENSE.txt",
+    "static/media/logo.png": "/Glassesusa/static/media/logo.bd597fcd.png",
+    "static/media/logo_dark.png": "/Glassesusa/static/media/logo_dark.bdb7eddb.png"
   },
   "entrypoints": [
     "static/js/runtime-main.3465a2c7.js",
-    "static/js/2.7890b821.chunk.js",
-    "static/css/main.f3f435bc.chunk.css",
-    "static/js/main.e29e462c.chunk.js"
+    "static/js/2.e3828fa4.chunk.js",
+    "static/css/main.c987ad46.chunk.css",
+    "static/js/main.a4435b44.chunk.js"
   ]
 }
