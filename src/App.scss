@@ -25,8 +25,12 @@ div.App {
 
     & > a img {
       display: flex;
-      width: 300px;
-      height: 100px;
+      width: 250px;
+      height: 70px;
+      @include respond-to('small') {
+        width: 300px;
+        height: 100px;
+      }
     }
     & > span {
       width: 90%;

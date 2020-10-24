@@ -7,7 +7,7 @@ div.glasses_wrapper {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 45vh;
+  margin-top: 40vh;
   margin-bottom: 5vh;
 
   & > div.glasses_list {
@@ -16,19 +16,28 @@ div.glasses_wrapper {
     flex-wrap: wrap;
     justify-content: center;
     background-color: white;
+    position: relative;
+    bottom: 0;
+    @include respond-to('small') {
+      top: 5vh;
+    }
 
     & > div.item {
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
       align-items: center;
-      width: 300px;
-      height: 300px;
+      width: 250px;
+      height: 250px;
       background-color: white;
       margin: 35px;
       border-radius: 2px;
       box-shadow: 0 11px 5px rgba(0,0,0,0.12), 0 5px 7px rgba(0,0,0,0.24);
       transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+      @include respond-to('small') {
+        width: 300px;
+        height: 300px;
+      }
       @include respond-to('larger') {
         width: 350px;
         height: 350px;
@@ -68,8 +77,11 @@ div.glasses_wrapper {
       }
 
       & > div.glasses_photo {
-        height: 45%;
+        height: 40%;
         width: 100%;
+        @include respond-to('small') {
+          height: 45%;
+        }
       }
 
       & > span.name {
@@ -110,7 +122,10 @@ div.glasses_wrapper {
       & > a {
         display: flex;
         width: 80%;
-        margin-top: 0.5em;
+        margin-top: 0.2em;
+        @include respond-to('small') {
+          margin-top: 0.5em;
+        }
 
         & > button.item_btn {
           color: white;
@@ -121,6 +136,10 @@ div.glasses_wrapper {
           width: 100%;
           border-radius: 30px;
           margin: 0;
+          font-size: 0.8em;
+          @include respond-to('small') {
+            font-size: 1em;
+          }
           @include respond-to('larger') {
             margin-top: 10px;
           }
