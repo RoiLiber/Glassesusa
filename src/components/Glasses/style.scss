@@ -17,9 +17,12 @@ div.glasses_wrapper {
     justify-content: center;
     background-color: white;
     position: relative;
-    bottom: 5vh;
+    top: -3vh;
     @include respond-to('small') {
       top: 5vh;
+    }
+    @include respond-to('larger') {
+      top: 0;
     }
 
     & > div.clear {
@@ -214,9 +217,7 @@ div.glasses_wrapper {
     font-size: 1em;
     z-index: 1000;
     position: relative;
-    @include respond-to('small') {
-      top: 5vh;
-    }
+    top: 2vh
   }
   & > div button.darkMode_btn {
     color: $blue;
