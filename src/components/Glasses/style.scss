@@ -151,7 +151,7 @@ div.glasses_wrapper {
             margin-top: 10px;
           }
         }
-        & > button:hover {
+        & > button.item_btn:hover {
           background-color: $blue;
           border: thin solid $blue;
         }
@@ -170,6 +170,9 @@ div.glasses_wrapper {
       }
       & > span.name {
         color: $blue;
+      }
+      & > a button.disabled {
+        background-color: $dark-blue;
       }
 
       & > p.price_and_shipping {
