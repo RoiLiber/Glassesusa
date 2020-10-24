@@ -78,9 +78,9 @@ export default function Glasses(props) {
                     {glasses.map((item, index) => {
                         return glassesItem(item, index)
                     })}
+                    {isOpen && <div className={`clear ${darkMode ? 'darkMode_clear' : ''}`}/>}
                 </div>
             }
-            {isOpen && <div className={`clear ${darkMode ? 'darkMode_clear' : ''}`}/>}
         </div>
     );
 }

@@ -85,11 +85,11 @@ div.App {
 
     & > a img {
       display: flex;
-      width: 250px;
-      height: 70px;
+      width: 200px;
+      height: 100px;
       @include respond-to('small') {
         width: 300px;
-        height: 100px;
+        height: 150px;
       }
     }
     & > span {

@@ -10,17 +10,6 @@ div.glasses_wrapper {
   margin-top: 40vh;
   z-index: 700;
 
-  & > div.clear {
-    height: 10vh;
-    width: 100%;
-    @include respond-to('small') {
-      height: 12vh;
-    }
-  }
-  & > div.darkMode_clear {
-    background-color: $dark-blue;
-  }
-
   & > div.glasses_list {
     width: 100%;
     display: flex;
@@ -30,7 +19,19 @@ div.glasses_wrapper {
     position: relative;
     bottom: 5vh;
     @include respond-to('small') {
-      bottom: 0;
+      top: 5vh;
+    }
+
+    & > div.clear {
+      height: 5vh;
+      width: 100%;
+      background-color: white;
+      @include respond-to('small') {
+        height: 10vh;
+      }
+    }
+    & > div.darkMode_clear {
+      background-color: $dark-blue;
     }
 
     & > div.item {
@@ -212,6 +213,10 @@ div.glasses_wrapper {
     margin: 5vh;
     font-size: 1em;
     z-index: 1000;
+    position: relative;
+    @include respond-to('small') {
+      top: 5vh;
+    }
   }
   & > div button.darkMode_btn {
     color: $blue;
