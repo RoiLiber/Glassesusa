@@ -27,7 +27,7 @@ export default function Glasses(props) {
         const inStock = qty !== 0;
 
         return <Fade bottom delay={200 * (index + 1)} key={item.id}>
-            <div key={item.id} className={'item'}>
+            <div key={item.id} className={`item ${darkMode ? 'item_darkMode' : ''}`}>
                 <div className={'item_top'}>
                     {asDiscount ? <span className={'discount'}>{discount}% OFF</span> : null}
                     <span className={'qty'}>
@@ -37,7 +37,7 @@ export default function Glasses(props) {
                 </span>
                 </div>
                 <div className={'glasses_photo'}>
-                    <Carousel imgList={imgList} key={uuidv4}/>
+                    <Carousel imgList={imgList} key={uuidv4} darkMode={darkMode}/>
                 </div>
                 <span className={'name'}>{name}</span>
                 <p className={'price_and_shipping'}>

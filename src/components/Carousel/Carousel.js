@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from 'uuid';
 import './style.scss';
 
 export default function Carousel(props) {
-    const { imgList } = props;
+    const { imgList, darkMode } = props;
     const [photoIndex, setPhotoIndex] = useState(0);
 
     function arrowLeft(photoIndex) {
@@ -25,7 +25,7 @@ export default function Carousel(props) {
     }
 
     return (
-        <div className={'carousel_wrapper'}>
+        <div className={`carousel_wrapper ${darkMode ? 'carousel_darkMode' : ''}`}>
             <span className={'arrow'}>
                 <ArrowBackIos onClick={() => arrowLeft(photoIndex)}/>
             </span>
