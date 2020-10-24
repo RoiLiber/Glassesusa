@@ -29,12 +29,15 @@ div.App {
 
     & > span {
       color: white;
-      font-size: 1.2em;
+      font-size: 0.8em;
       width: 100%;
       padding: 0.5em;
       display: flex;
       justify-content: center;
       align-items: center;
+      @include respond-to('small') {
+        font-size: 1.2em;
+      }
     }
 
     & > div.networks_wrapper {
@@ -42,8 +45,11 @@ div.App {
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 1.2em;
+      font-size: 0.8em;
       padding: 0.5em;
+      @include respond-to('small') {
+        font-size: 1.2em;
+      }
 
       & > a .net_icon {
         margin: 0 0.5em;
