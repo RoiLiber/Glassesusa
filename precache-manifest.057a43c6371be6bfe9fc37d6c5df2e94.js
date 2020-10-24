@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6f6309d4b0421c9b4d11fbeabe33d0a2",
+    "revision": "629a5d0c237205cbab1ffe08775abb38",
     "url": "/Glassesusa/index.html"
   },
   {
-    "revision": "193135e2b62298735284",
-    "url": "/Glassesusa/static/css/main.759d3fd4.chunk.css"
+    "revision": "6530a1ab13d7f008430c",
+    "url": "/Glassesusa/static/css/main.6e986ad6.chunk.css"
   },
   {
     "revision": "c8b079d06863028a31b1",
@@ -16,19 +16,19 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Glassesusa/static/js/2.42f7bd7f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "193135e2b62298735284",
-    "url": "/Glassesusa/static/js/main.4442c6a0.chunk.js"
+    "revision": "6530a1ab13d7f008430c",
+    "url": "/Glassesusa/static/js/main.2feb3320.chunk.js"
   },
   {
     "revision": "debb157d6110be14d09f",
     "url": "/Glassesusa/static/js/runtime-main.3465a2c7.js"
   },
   {
-    "revision": "bd597fcdbb6a286a5d8040a9bd29ea25",
-    "url": "/Glassesusa/static/media/logo.bd597fcd.png"
+    "revision": "e7c6a8cb929c58a2229d98b2aceede87",
+    "url": "/Glassesusa/static/media/logo.e7c6a8cb.png"
   },
   {
-    "revision": "bdb7eddb249df64394854c8820633158",
-    "url": "/Glassesusa/static/media/logo_dark.bdb7eddb.png"
+    "revision": "4fbad82a087394bef20bf371fb3ce20e",
+    "url": "/Glassesusa/static/media/logo_dark.4fbad82a.png"
   }
 ]);
