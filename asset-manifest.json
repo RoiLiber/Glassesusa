@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Glassesusa/static/css/main.562c511d.chunk.css",
+    "main.css": "/Glassesusa/static/css/main.4165a4dc.chunk.css",
     "main.js": "/Glassesusa/static/js/main.a4435b44.chunk.js",
     "main.js.map": "/Glassesusa/static/js/main.a4435b44.chunk.js.map",
     "runtime-main.js": "/Glassesusa/static/js/runtime-main.3465a2c7.js",
@@ -8,9 +8,9 @@
     "static/js/2.e3828fa4.chunk.js": "/Glassesusa/static/js/2.e3828fa4.chunk.js",
     "static/js/2.e3828fa4.chunk.js.map": "/Glassesusa/static/js/2.e3828fa4.chunk.js.map",
     "index.html": "/Glassesusa/index.html",
-    "precache-manifest.846731347f0b6f864f12a9e2003eda85.js": "/Glassesusa/precache-manifest.846731347f0b6f864f12a9e2003eda85.js",
+    "precache-manifest.81b55f1a05d044832aff73b6ecff88d2.js": "/Glassesusa/precache-manifest.81b55f1a05d044832aff73b6ecff88d2.js",
     "service-worker.js": "/Glassesusa/service-worker.js",
-    "static/css/main.562c511d.chunk.css.map": "/Glassesusa/static/css/main.562c511d.chunk.css.map",
+    "static/css/main.4165a4dc.chunk.css.map": "/Glassesusa/static/css/main.4165a4dc.chunk.css.map",
     "static/js/2.e3828fa4.chunk.js.LICENSE.txt": "/Glassesusa/static/js/2.e3828fa4.chunk.js.LICENSE.txt",
     "static/media/logo.png": "/Glassesusa/static/media/logo.bd597fcd.png",
     "static/media/logo_dark.png": "/Glassesusa/static/media/logo_dark.bdb7eddb.png"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.3465a2c7.js",
     "static/js/2.e3828fa4.chunk.js",
-    "static/css/main.562c511d.chunk.css",
+    "static/css/main.4165a4dc.chunk.css",
     "static/js/main.a4435b44.chunk.js"
   ]
 }
