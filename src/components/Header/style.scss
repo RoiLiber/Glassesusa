@@ -15,7 +15,7 @@ header.header {
   & > span.lamp_wire {
     position: absolute;
     top: 0;
-    right: 40px;
+    right: 35px;
     width: 2px;
     height: calc(10vh + 5px);
     padding: 0;
@@ -28,7 +28,7 @@ header.header {
   & > .lamp_icon, .light_icon {
     position: absolute;
     top: 10vh;
-    right: 25px;
+    right: 20px;
     color: $yellow;
     font-size: 2em;
     z-index: 1100;

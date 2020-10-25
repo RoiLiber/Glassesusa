@@ -8,7 +8,7 @@ export default function Fireworks(props) {
     document.getElementsByTagName('body')[0].appendChild(canvas);
     canvas.style.position = 'fixed';
     canvas.style.width = '100%';
-    canvas.style.height = '55vh';
+    canvas.style.height = '50vh';
     canvas.style.bottom = '0';
     canvas.style.zIndex = '500';
 
