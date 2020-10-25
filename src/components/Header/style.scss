@@ -15,21 +15,27 @@ header.header {
   & > span.lamp_wire {
     position: absolute;
     top: 0;
-    right: 45px;
+    right: 40px;
     width: 2px;
     height: calc(10vh + 5px);
     padding: 0;
     background-color: $dark-blue;
+    @include respond-to('small') {
+      right: 65px;
+    }
   }
 
   & > .lamp_icon, .light_icon {
     position: absolute;
     top: 10vh;
-    right: 30px;
+    right: 25px;
     color: $yellow;
     font-size: 2em;
     z-index: 1100;
     cursor: pointer;
+    @include respond-to('small') {
+      right: 50px;
+    }
   }
 
   & > .dark_icon {

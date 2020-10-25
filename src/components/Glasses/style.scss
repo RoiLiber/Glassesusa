@@ -44,7 +44,10 @@ div.glasses_wrapper {
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 5vh;
+    top: 7vh;
+    @include respond-to('small') {
+      top: 5vh;
+    }
 
     & > button.btn {
       color: $blue;
@@ -78,7 +81,7 @@ div.glasses_wrapper {
     justify-content: center;
     background-color: white;
     padding-bottom: 10vh;
-    @include respond-to('medium') {
+    @include respond-to('large') {
       padding-bottom: 0;
     }
 
