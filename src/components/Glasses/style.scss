@@ -7,8 +7,69 @@ div.glasses_wrapper {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 40vh;
   z-index: 700;
+  position: relative;
+  top: 30vh;
+
+  & > div.head_line_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 15vh;
+    z-index: 1000;
+    background-color: white;
+    padding: 5vh 0 0 0;
+
+    & > span.head_line {
+      color: $red;
+      font-size: 1.2em;
+      padding: 2em;
+      @include respond-to('v-small') {
+        font-size: 1.5em;
+      }
+      @include respond-to('small') {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+    }
+  }
+  & > div.head_line_wrapper_dark {
+    background-color: $dark-blue;
+  }
+
+  & > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 5vh;
+
+    & > button.btn {
+      color: $blue;
+      border: thin solid $blue;
+      background-color: white;
+      border-radius: 20px;
+      padding: 5px 20px;
+      margin: 1em;
+      font-size: 1em;
+      z-index: 1000;
+
+    }
+    & > button.darkMode_btn {
+      color: $blue;
+      border: thin solid $blue;
+      background-color: $dark-blue;
+    }
+    & > button:hover {
+      color: white;
+      border: thin solid white;
+      background-color: $blue;
+      font-size: 1.02em;
+      font-weight: bold;
+    }
+  }
 
   & > div.glasses_list {
     width: 100%;
@@ -16,25 +77,9 @@ div.glasses_wrapper {
     flex-wrap: wrap;
     justify-content: center;
     background-color: white;
-    position: relative;
-    top: -3vh;
-    @include respond-to('small') {
-      top: 5vh;
-    }
-    @include respond-to('larger') {
-      top: 0;
-    }
-
-    & > div.clear {
-      height: 7vh;
-      width: 100%;
-      background-color: white;
-      @include respond-to('small') {
-        height: 10vh;
-      }
-    }
-    & > div.darkMode_clear {
-      background-color: $dark-blue;
+    padding-bottom: 10vh;
+    @include respond-to('medium') {
+      padding-bottom: 0;
     }
 
     & > div.item {
@@ -204,31 +249,6 @@ div.glasses_wrapper {
 
   & > div.darkMode_list {
     background-color: $dark-blue;
-  }
-
-  & > div button.btn {
-    color: $blue;
-    border: thin solid $blue;
-    background-color: white;
-    border-radius: 20px;
-    font-weight: bold;
-    padding: 5px 20px;
-    margin: 5vh;
-    font-size: 1em;
-    z-index: 1000;
-    position: relative;
-    top: 2vh
-  }
-  & > div button.darkMode_btn {
-    color: $blue;
-    border: thin solid $blue;
-    background-color: $dark-blue;
-  }
-  & > div button:hover {
-    color: white;
-    border: thin solid white;
-    background-color: $blue;
-    font-size: 1.02em;
   }
 }
 

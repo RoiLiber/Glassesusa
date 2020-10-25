@@ -31,7 +31,7 @@ export default function Glasses(props) {
                 <div className={'item_top'}>
                     {asDiscount ? <span className={'discount'}>{discount}% OFF</span> : null}
                     <span className={'qty'}>
-                    {!inStock ? '0 items ' : `Under ${qty} `}
+                    {!inStock ? '0 items ' : `Under ${qty + 1} `}
                         left
                     <Fire className={'fire_icon'}/>
                 </span>
@@ -63,9 +63,12 @@ export default function Glasses(props) {
 
     return (
         <div className={'glasses_wrapper'}>
+            <div className={`head_line_wrapper ${darkMode ? 'head_line_wrapper_dark' : ''}`}>
+                <span className={'head_line'}>Our Top Daily Favorites</span>
+            </div>
             {
                 !isOpen
-                    ? <Pulse count={3} delay={1700}>
+                    ? <Pulse count={3} delay={1200}>
                         <Button
                             variant="text"
                             className={`btn ${darkMode ? 'darkMode_btn' : ''}`}
@@ -78,7 +81,6 @@ export default function Glasses(props) {
                     {glasses.map((item, index) => {
                         return glassesItem(item, index)
                     })}
-                    {isOpen && <div className={`clear ${darkMode ? 'darkMode_clear' : ''}`}/>}
                 </div>
             }
         </div>

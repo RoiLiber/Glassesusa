@@ -1,0 +1,51 @@
+@import "../../styles/colorsConfig";
+@import "../../styles/mixins";
+
+footer.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+  border-radius: 4px 4px 0 0;
+  background: linear-gradient(45deg, $dark-blue, $red);
+  background-size: 250% 300%;
+  animation: g_color_background 5.5s ease infinite;
+
+  & > span {
+    color: white;
+    font-size: 0.8em;
+    width: 100%;
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include respond-to('small') {
+      font-size: 1.2em;
+    }
+  }
+
+  & > div.networks_wrapper {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    padding: 0.5em;
+    @include respond-to('small') {
+      font-size: 1.2em;
+    }
+
+    & > a .net_icon {
+      margin: 0 0.5em;
+      color: white;
+      cursor: pointer;
+    }
+    & > a .net_icon:hover {
+      color: $blue;
+    }
+  }
+}
